@@ -35,5 +35,15 @@ namespace Demos1
 
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int numero1 = 15;
+            int numero2 = 5;
+            int total = numero1 * numero2;
+
+            textBox3.Text = total.ToString();
+
+        }
     }
 }

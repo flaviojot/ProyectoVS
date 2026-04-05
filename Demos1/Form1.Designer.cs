@@ -32,6 +32,8 @@
             textBox1 = new TextBox();
             button2 = new Button();
             textBox2 = new TextBox();
+            button3 = new Button();
+            textBox3 = new TextBox();
             SuspendLayout();
             // 
             // button1
@@ -68,11 +70,30 @@
             textBox2.Size = new Size(216, 23);
             textBox2.TabIndex = 3;
             // 
+            // button3
+            // 
+            button3.Location = new Point(199, 197);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 4;
+            button3.Text = "Multiplicar";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(345, 206);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(100, 23);
+            textBox3.TabIndex = 5;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox3);
+            Controls.Add(button3);
             Controls.Add(textBox2);
             Controls.Add(button2);
             Controls.Add(textBox1);
@@ -90,5 +111,7 @@
         private TextBox textBox1;
         private Button button2;
         private TextBox textBox2;
+        private Button button3;
+        private TextBox textBox3;
     }
 }
