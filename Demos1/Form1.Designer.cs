@@ -30,6 +30,8 @@
         {
             button1 = new Button();
             textBox1 = new TextBox();
+            button2 = new Button();
+            textBox2 = new TextBox();
             SuspendLayout();
             // 
             // button1
@@ -38,7 +40,7 @@
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Sumar";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -49,11 +51,30 @@
             textBox1.Size = new Size(242, 23);
             textBox1.TabIndex = 1;
             // 
+            // button2
+            // 
+            button2.Location = new Point(220, 156);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 2;
+            button2.Text = "Restar";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(316, 156);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(216, 23);
+            textBox2.TabIndex = 3;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox2);
+            Controls.Add(button2);
             Controls.Add(textBox1);
             Controls.Add(button1);
             Name = "Form1";
@@ -67,5 +88,7 @@
 
         private Button button1;
         private TextBox textBox1;
+        private Button button2;
+        private TextBox textBox2;
     }
 }

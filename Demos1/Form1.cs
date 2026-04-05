@@ -22,5 +22,17 @@ namespace Demos1
             textBox1.Text = total.ToString();
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int numero1 = 15;
+            int numero2 = 5;
+            int total = numero1 - numero2;
+
+            textBox2.Text = total.ToString();
+
+
+
+        }
     }
 }
